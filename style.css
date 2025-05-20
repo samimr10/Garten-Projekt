@@ -1,0 +1,936 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
+}
+
+/* Allgemeine Abstände zwischen Abschnitten */
+section {
+    margin-top: 160px !important;
+    margin-bottom: 160px !important;
+  }
+
+  /* header: 100vh*/
+
+.navbar {
+    padding: 15px 18px !important;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(30px);
+    z-index: 1000;
+}
+
+.logo1 {
+    width: 360px;
+    height: auto;
+}
+
+.nav-item {
+    margin: 10px 10px;
+}
+
+.nav-item .nav-link {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+/* animation bei navigation wenn man drauf geht */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgb(34, 139, 34);
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: rgb(34, 139, 34);
+}
+
+/* Termin button */
+.btn-navbar {
+    display: inline-block;
+    padding: 10px 43px;
+    border: 1px solid lightgreen;
+    color: white;
+    /* schriftfarbe für "termin buchen" button*/
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: lightgreen;
+    transition: 0.2s ease-in;
+}
+
+.btn-navbar:hover {
+    background-color: transparent;
+    color: rgb(34, 139, 34);
+    /* farbe für den "termin buchen" buttton wenn man drauf geht */
+    border: 1px solid rgb(34, 139, 34);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Box */
+.popup-content {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    font-size: 13px;
+}
+
+/* Popup Überschrift */
+.popup-heading {
+    color: rgb(34, 139, 34);
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Schließ Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Form Inputs */
+.popup-form input,
+.popup-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Termin anfragen button */
+.popup-form button {
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Header start */
+
+.header {
+    margin-top: 75px;
+}
+
+.content-home2 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+/* Garten & Landschaftsbau Kluck */
+.home-heading {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 74px;
+    color: #555; 
+}
+
+.h {
+    transform: scale(1.0);
+}
+
+/* Landschaftsbau Kluck schrfit */
+.home-span {
+    color: rgb(34, 139, 34);
+}
+
+.para-home {        /* text */
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+    color: #555;
+}
+
+/* mehr erfahren button */
+.home-links {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    /* schriftfarbe für "mehr erfahren" btton */
+    border: 1px solid lightgreen;
+    /* farbe für mehr erfahren button */
+    background-color: lightgreen;
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.home-links:hover {
+    background-color: transparent;
+    color: rgb(34, 139, 34);
+    /* farbe für den "mehr erfahren" buttton wenn man drauf geht */
+    border: 1px solid rgb(34, 139, 34) !important;
+}
+
+.img-home {
+    margin-right: 20px;
+    width: 580px;
+    border-radius: 50px;
+}
+/* Header ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* über uns part start */
+.über-uns-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.über-uns {         /* Bild */
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    position: relative;
+    border-radius: 30px;
+}
+
+.heading-über {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(34, 139, 34);
+    /* farbe für der überschrift "Über uns" */
+    margin: 10px 0px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.para-über {        /* text */
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    line-height: 24px;
+    margin: 25px 0px;
+}
+
+.link-über {
+    /* über uns -> mehr lesen link */
+    text-decoration: none;
+    border: 1px solid lightgreen;
+    color: white;
+    background-color: lightgreen;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 22px;
+    position: relative;
+    transition: 0.2s ease-in;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.link-über:hover {
+    background-color: transparent;
+    color: rgb(34, 139, 34);
+    border: 1px solid rgb(34, 139, 34);
+}
+
+.img-über {
+    width: 80%;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+/* über uns part ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Mehr lesen Pop-up */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    /* Ermöglicht Scrollen, falls der Inhalt zu groß ist */
+}
+
+/* Pop-up Content */
+.popup-content {
+    background: rgb(242, 242, 242);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;   /* Maximale Breite des Pop-ups */
+    max-height: 90%;    /* Maximale Höhe des Pop-ups */
+    overflow-y: auto;   /* Scrollen innerhalb des Pop-ups, falls der Inhalt zu groß ist */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pop-up Überschrift */
+.popup-heading {
+    font-size: 24px;
+    color: rgb(34, 139, 34);
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 40px 80px -40px;
+    text-align: center;
+}
+
+.grid-container {       /* Grid-Layout für die Karten im Pop-up */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 26px;
+    color: #333;
+    cursor: pointer;
+}
+/* Pop-up ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Dienstleistung section start */
+.dienstleistung-category {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.heading-dienstleistung {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(34, 139, 34);
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.heading-dienstleistung::after {
+    /* unterstrich bei "Unsere Dienstleistungen" */
+    content: '';
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: -8px;
+    background-color: rgb(34, 139, 34);
+    width: 86px;
+    height: 2px;
+
+}
+
+.card-dienstleistung {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Verteilt Inhalt gleichmäßig */
+    height: 100%; /* Passt sich an die höchste Karte an */
+    padding: 14px 10px;
+    background-color: #fff !important;
+    border: none;
+    border-radius: 16px;
+    margin-top: 10px;
+    transition: 0.2s ease-in;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-dienstleistung:hover {
+    transform: scale(1.02);
+}
+
+.card-title {
+    font-size: 24px;
+    color: rgb(34, 139, 34);
+    width: 100%;
+    border-bottom: 1px solid rgb(34, 139, 34);
+    padding: 5px 0px;
+    margin: 10px 0px;
+    margin-bottom: 20px !important;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+
+}
+
+
+
+/* Fixierte Höhe für Carousel-Container */
+.carousel-inner {
+    display: flex;
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    min-height: 400px; /* Setze eine Mindesthöhe für den Carousel-Container */
+  }
+  
+  /* Gleiche Höhe für alle Slides */
+  .carousel-item {
+    min-height: 400px; /* Gleiche Höhe wie der Carousel-Container */
+  }
+
+
+.elementor-icon {
+    background-color: rgb(188, 186, 99, 0.17);
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.fa-plant-wilt,
+.fa-scissors,
+.fa-trowel-bricks,
+.fa-tree {
+    font-size: 40px;
+
+}
+
+.btn-dienstleistung-ctg {
+    color: rgb(34, 139, 34);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-dienstleistung-ctg:hover {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.button-left,
+.button-right {
+    position: absolute;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: 30px;
+    background-color: lightgreen;
+    font-size: 18px;
+
+}
+
+.button-right {
+    right: 20px;
+}
+
+.button-left {
+    left: 20px;
+}
+
+.button-right:hover {
+    color: rgb(34, 139, 34);
+}
+
+/* Links, Rechts pfeile */
+.fa-arrow-right {
+    /* rechter pfeil farbe */
+    color: rgb(34, 139, 34);
+}
+
+.fa-solid {
+    /* linker pfeil farbe */
+    color: rgb(34, 139, 34);
+}
+/* Dienstleistung section ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Projekte Section */
+.projekte-section {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .heading-projekte {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(34, 139, 34);
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .heading-projekte::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: -8px;
+    background-color: rgb(34, 139, 34);
+    width: 56px;
+    height: 2px;
+  }
+  
+  .subheading-projekte {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(34, 139, 34);
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .video-container {
+    text-align: center;
+  }
+  
+  .video-projekte {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bilder-container {
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .img-projekte {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-projekte:hover {
+    transform: scale(1.05);
+  }
+
+
+    /* Bilder vergrößern */
+  /* Lightbox Overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Vergrößertes Bild */
+  .lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Schließen-Button */
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+/*projekte section ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Bewertung Section start */
+.bewertung {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.heading-bewertung {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(34, 139, 34);
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.heading-bewertung::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -8px;
+    background-color: rgb(34, 139, 34);
+    width: 56px;
+    height: 2px;
+}
+
+
+.container-clients {
+    margin: 100px 0px 20px 0px;
+}
+
+.container-content {
+    width: 90%;
+    height: 350px;
+    background-image: linear-gradient(145deg, rgba(34, 139, 34) 0%, rgba(144, 238, 144)100%);
+    margin: auto;
+    padding: 30px;
+    text-align: end;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.2s ease-in;
+}
+
+.container-content:hover {
+    transform: translateY(-14px);
+}
+
+.img-client {
+    position: absolute;
+    top: -62px;
+    left: -38px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50% !important;
+}
+
+.image-clients {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 12px 0px;
+}
+
+.rating .stars {
+    font-size: 14px;
+    margin: 0px 2px;
+    color: #fff;
+}
+
+/* Sterne in der Bewertung */
+.icon.stars .fa-star {
+    color: #fff;
+  }
+
+.client-name {
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.para-client {
+    color: rgba(255, 255, 255, 0.877);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 26px 0px 15px 0px;
+    text-align: center;
+}
+
+.bewertung-link{
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 26px;
+    text-decoration: none;
+}
+.bewertung-link:hover {
+    text-decoration: underline;
+  }
+
+.profession {
+    color: #fff;
+    font-weight: 00;
+    font-size: 14px;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.carousel-indicators button {
+    background-color: rgb(34, 139, 34);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -60px !important;
+}
+/* Bewertung ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Kontakt start*/
+.kontakt-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-kontakt {
+    font-size: 40px;
+    color: rgb(34, 139, 34);
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.heading-kontakt::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -8px;
+    background-color: rgb(34, 139, 34);
+    width: 86px;
+    height: 2px;
+}
+
+.form-origin {
+    width: 100%;
+    height: 480px;
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 8px;
+}
+
+.form-origin input {
+    color: #777;
+    font-size: 13px;
+    border: 1px solid #e4e3e3;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 16px 22px;
+    margin-bottom: 40px;
+}
+
+::placeholder {
+    color: #555 !important;
+}
+
+.form-origin textarea {
+    padding: 20px;
+    height: 200px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #777;
+}
+
+.btn-kontakt {
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background-color: lightgreen;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px 0px;
+    border: 2px solid lightgreen;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-kontakt:hover {
+    background-color: transparent;
+    color: rgb(34, 139, 34);
+    /* farbe für den "Nachricht senden" buttton wenn man drauf geht */
+    border: 1px solid rgb(34, 139, 34);
+
+}
+
+.content-kontakt {
+    text-align: center;
+}
+
+/* Textarea-Feld im Kontaktformular */
+textarea.form-control {
+    height: 300px; 
+    width: 100%;
+  }
+/*kontakt ende */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Impressum start */
+.impressum-section {
+    width: 100%;
+    min-height: 70vh;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 60px;
+}
+
+.content-impressum {
+    max-width: 800px;
+    text-align: left;
+}
+
+.heading-impressum {
+    font-size: 40px;
+    color: rgb(34, 139, 34);
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.heading-impressum::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -8px;
+    background-color: rgb(34, 139, 34);
+    width: 56px;
+    height: 2px;
+}
+
+.para-impressum {
+    font-size: 14px;
+    color: #555;
+    line-height: 26px;
+    text-align: center;
+}
+
+#qrbild {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+/* Impressum Ende */
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border-radius: 50px;
+    margin: -150px 230px !important;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

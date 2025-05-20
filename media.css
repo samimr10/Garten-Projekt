@@ -1,0 +1,342 @@
+/* Media Queries für Responsive Design */
+
+/* Ab 1025px also kleine Laptops und mehr*/
+@media (min-width: 1025px) {
+    .img-home {
+        width: 500px;
+    }
+
+    .über-uns-container {
+        height: auto;
+    }
+
+
+    .dienstleistung-category {
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .bewertung {
+        height: auto;
+    }
+
+    .kontakt-form {
+        height: auto;
+        padding: 0px 0;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .logo1 {
+        width: 280px;
+    }
+
+    .img-home {
+        width: 400px;
+    }
+
+    .home-heading {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .über-uns {
+        margin-top: 100px;
+    }
+
+
+    .card-dienstleistung {
+        margin-bottom: 20px;
+    }
+
+    .container-content {
+        height: 380px;
+    }
+}
+
+/* Kleine Tablets und große Handys (600px - 768px) */
+@media (max-width: 768px) {
+    .logo1 {
+        width: 340px;
+    }
+
+    .content-home2 {
+        flex-direction: column;
+        text-align: center;
+        margin-top: -50px;
+        padding: 0 10px;
+        margin-left: auto;
+    }
+
+    .img-home {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .box-container2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .para-home {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .über-uns {
+        margin-top: -100px;
+        padding: 0 15px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .img-über {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .dienstleistung-category {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;/* Abstand zwischen  Karten */
+        padding: 30px 0px;
+        margin: 20px auto;
+        margin-top: 0px !important;
+        padding-bottom: 80px;
+    }
+
+    .card-dienstleistung {
+        padding: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .heading-dienstleistung {
+        position: relative;
+        top: -200px !important;
+        margin-bottom: -400px !important;
+        z-index: 1;
+        text-align: center;
+    }
+
+    #mehr {
+        margin-bottom: 80px !important;
+    }
+
+    .über-uns-container {
+        margin-bottom: 150px !important;
+    }
+
+    .projekte-section {
+        padding: 40px 0;
+        margin: 500px 0px;
+    }
+
+    .container-clients {
+        margin-top: 60px;
+    }
+
+    .img-client {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container-content {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .heading-kontakt {
+        margin-bottom: 60px;
+    }
+
+    #dienstleistungen {
+        margin-top: 120px !important;
+        padding-top: 40px !important;
+    }
+
+    .carousel-inner {
+        margin-top: 60px !important;
+        /* Bringt den Inhalt unter die verschobene Überschrift */
+    }
+
+    .carousel-item {
+        min-height: auto;
+        padding: 30px 10px;
+    }
+
+    footer {
+        margin: -150px auto !important;
+        height: auto;
+        padding: 20px;
+        border-radius: 50px;
+        text-align: center;
+    }
+}
+
+/* Kleine Handys (bis 600px) */
+@media (max-width: 600px) {
+    .logo1 {
+        width: 300px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .btn-navbar {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .home-heading {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .home-links {
+        margin: 10px auto;
+    }
+
+    .heading-über,
+    .heading-dienstleistung,
+    .heading-projekte,
+    .heading-bewertung,
+    .heading-kontakt,
+    .heading-impressum {
+        font-size: 28px;
+    }
+
+    .popup-content {
+        padding: 20px 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .video-projekte {
+        height: auto;
+    }
+
+    .form-origin {
+        padding: 30px 15px;
+    }
+
+    .content-impressum {
+        padding: 0 15px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .para-footer {
+        text-align: center;
+    }
+
+    #dienstleistungen {
+        margin-top: 150px !important;
+        padding-top: 60px !important;
+    }
+
+    .heading-dienstleistung::after {
+        bottom: -12px;
+    }
+
+    .heading-dienstleistung {
+
+        top: -60px;
+        margin-bottom: -40px;
+        padding: 8px 15px;
+        font-size: 28px;
+        /* Etwas kleinere Schrift */
+    }
+
+    .carousel-inner {
+        margin-top: 80px !important;
+    }
+
+    .carousel-item {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .über-uns-container {
+        margin-bottom: 180px !important;
+    }
+
+    .img-über {
+        margin-bottom: 50px;
+    }
+
+    #mehr {
+        margin-bottom: 100px !important;
+    }
+
+}
+
+/* Sehr kleine Handys (bis 400px) */
+@media (max-width: 400px) {
+    .logo1 {
+        width: 250px;
+    }
+
+    .home-heading {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .popup-content {
+        width: 95%;
+    }
+
+    .img-client {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+
+    .container-content {
+        height: 400px;
+        padding: 60px 15px 15px;
+    }
+
+    .btn-kontakt {
+        width: 100%;
+    }
+
+    img[src="img/instaqr.png"] {
+        height: 250px;
+    }
+
+    #dienstleistungen {
+        margin-top: 250px !important;
+        padding-top: 120px !important;
+    }
+
+    .heading-dienstleistung {
+        font-size: 24px;
+        margin-bottom: 30px !important;
+        top: -80px;
+    }
+
+    .über-uns {
+        margin-bottom: 100px;
+    }
+}

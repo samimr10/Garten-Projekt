@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/4c729db828.js' crossorigin='anonymous'></script>
+  <title>Garten- & Landschaftsbau Kluck</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo text-uppercase" href="#"> <img src="img/logo1.png" class="logo1" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dienstleistungen">Dienstleistungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projekte">Projekte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#impressum">Impressum</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn-navbar" href="#">Jetzt Anfragen</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ende -->
+
+  <!-- Popup für Anfrage start -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h3 class="popup-heading">Hinterlassen Sie mir eine Anfrage.</h3>
+      <form action="https://api.web3forms.com/submit" method="POST" class="popup-form">
+
+        <input type="hidden" name="access_key" value="7e8404aa-5191-462e-ac9c-ff65668a30c2">
+
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="Email Adresse" name="email" required>
+        <textarea placeholder="Nachricht" name="message" required></textarea>
+        <button type="submit" class="btn-kontakt">Nachricht senden</button>
+
+      </form>
+    </div>
+  </div>
+  <!-- Popup für Anfrage ende -->
+
+  <!-- Header start -->
+  <div class="header">
+    <div class="container-fluid gx-0">
+      <div class="container">
+        <div class="content-home">
+          <div class="row content-home2">
+            <div class="col-lg-7 col-md-5">
+
+              <div class="box-container">
+                <img src="img/arwed.jpeg" class="img-home" alt="banner img">
+              </div>
+
+            </div>
+            <div class="col-lg-5 col-md-7 h">
+              <div class="box-container2">
+                <h1 class="home-heading">Garten & <span class="home-span">Landschaftsbau Kluck</span> </h1>
+                <p class="para-home">
+                  Egal, ob Ihr Garten aussieht wie Kraut und Rüben, Ihre Hecke mal wieder einen Schnitt
+                  gebrauchen könnte oder die Hofeinfahrt neu gepflastert werden muss. Wir sind Ihr Experte
+                  und helfen Ihnen gerne weiter!
+                </p>
+                <div class="btn-home">
+                  <a href="#mehr" class="home-links">Mehr erfahren</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header ende -->
+
+  <!-- Über uns part start -->
+  <section class="container" id="mehr">
+    <div class="über-uns-container">
+      <div class="über-uns">
+        <div class="row">
+          <div class="col-lg-5 col-md-7 align-center">
+            <div class="content-über">
+              <h3 class="heading-über">Über mich</h3>
+              <p class="para-über"> Ich bin Arwed Kluck, gelernter Garten- und Landschaftsbauer mit 11 Jahren Erfahrung.
+                Meine Expertise
+                liegt in Baumpflege, Heckenschnitt, Pflasterarbeiten und Beetanlagen. Auf meiner Homepage möchte ich
+                Ihnen einen Einblick in meine Arbeit und Projekte geben. Entdecken Sie die Vielfalt meiner Leistungen,
+                angefangen bei der fachgerechten Baumpflege, über kunstvolle Pflasterarbeiten bis hin zur harmonischen
+                Gestaltung von Beetanlagen.
+                <br>
+                <a href="https://www.instagram.com/gartenundlandschaftsbau.kluck?igsh=Mnphb2ZieWdhcmc0"
+                  class="link-über">Mehr Sehen</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-5">
+            <div class="box-container flex-right">
+              <img src="img/img-über.jpeg" class="img-über" alt="img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Über uns part ende -->
+
+  <!-- Dienstleistung start -->
+  <section class="dienstleistung-category" id="dienstleistungen">
+    <h2 class="heading-dienstleistung">Unsere Dienstleistung</h2>
+    <div class="container-fluid">
+      <!-- slider carousel boostrap -->
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+
+                  <div class="card card-dienstleistung">
+                    <span class="elementor-icon">
+                      <i class="fa-solid fa-plant-wilt"></i>
+                    </span>
+                    <div class="card-body">
+                      <h5 class="card-title">Bepflanzung</h5>
+                      <p class="card-text">Entdecken Sie die Kunst der grünen Gestaltung! Mit meiner langjährigen
+                        Erfahrung biete ich professionelle Dienstleistungen zur Bepflanzung von Grünanlagen an. Lassen
+                        Sie uns gemeinsam Ihre Grünflächen in einen blühenden Rückzugsort verwandeln.</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                  <div class="card card-dienstleistung">
+                    <span class="elementor-icon">
+                      <i class="fa-solid fa-scissors"></i>
+                    </span>
+                    <div class="card-body">
+                      <h5 class="card-title">Baumfällung</h5>
+                      <p class="card-text">Ich biete fachgerechte Baumfällung und Sturmschadenaufarbeitung an. Mit
+                        fachlichem Know-how stehe ich Ihnen zur Verfügung, um Bäume sicher zu fällen. Lassen Sie uns
+                        gemeinsam die besten Lösungen für Ihre Bedürfnisse finden.</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                  <div class="card card-dienstleistung">
+                    <span class="elementor-icon">
+                      <i class="fa-solid fa-trowel-bricks"></i>
+                    </span>
+                    <div class="card-body">
+                      <h5 class="card-title">Pflasterarbeiten</h5>
+                      <p class="card-text">Mit meiner langjährigen Erfahrung stehe ich Ihnen zur Seite, wenn es um die
+                        Pflege Ihrer Bäume geht. Gemeinsam finden wir die beste Lösung, von Pflege bis zur Fällung.
+                        Kontaktieren Sie mich für Ihren perfekten Garten!</p>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+
+                  <div class="card card-dienstleistung">
+                    <span class="elementor-icon">
+                      <i class="fa-solid fa-tree"></i>
+                    </span>
+                    <div class="card-body">
+                      <h5 class="card-title">Baumpflege</h5>
+                      <p class="card-text">Ich biete professionelle Pflasterarbeiten für Terrassen und Auffahrten an.
+                        Gemeinsam erstelle ich mit Ihnen gerne ein Konzept, damit Ihr Außenbereich Ihren Wünschen
+                        entspricht.</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                  <div class="card card-dienstleistung">
+                    <span class="elementor-icon">
+                      <i class="fa-solid fa-scissors"></i>
+                    </span>
+                    <div class="card-body">
+                      <h5 class="card-title">Heckenschnitt</h5>
+                      <p class="card-text">Ich biete präzise Formschnitte für Hecken an und führe Heckenkürzungen
+                        außerhalb der Vogelschutzzeiten durch. Mit meinem Service sorge ich dafür, dass Ihre Hecken
+                        optimal gestaltet und gepflegt werden.</p>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="prev">
+
+          <span><i class="fa-sharp fa-solid fa-arrow-left btn-scroll button-left"></i></span>
+
+        </button>
+        <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="next">
+
+          <span><i class="fa-sharp fa-solid fa-arrow-right btn-scroll button-right"></i></span>
+
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Dienstleistung ende -->
+
+  <!-- Projekte start -->
+  <section class="projekte-section" id="projekte">
+    <h2 class="heading-projekte">Projekte</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Video-Bereich -->
+        <div class="col-lg-6 col-md-12">
+          <div class="video-container">
+            <h3 class="subheading-projekte">Fällung einer Rotbuche</h3>
+            <video controls class="video-projekte">
+              <!-- Video-Quelle hier einfügen -->
+              <source src="Baumfall.mp4" type="video/mp4">
+              Ihr Browser unterstützt dieses Videoformat nicht.
+            </video>
+          </div>
+        </div>
+
+        <!-- Bilder-Bereich -->
+        <div class="col-lg-6 col-md-12">
+          <div class="bilder-container">
+            <h3 class="subheading-projekte">Gartenprojekte</h3>
+            <div class="grid-container">
+              <!-- Beispielbilder -->
+              <img src="img/projekte1.jpg" loading="lazy" alt="Projekt 1" class="img-projekte"
+                data-src="img/projekte1.jpg">
+              <img src="img/projekte2.jpg" loading="lazy" alt="Projekt 2" class="img-projekte"
+                data-src="img/projekte2.jpg">
+              <img src="img/projekte3.jpg" loading="lazy" alt="Projekt 3" class="img-projekte"
+                data-src="img/projekte3.jpg">
+              <img src="img/projekte1.jpg" loading="lazy" alt="Projekt 4" class="img-projekte"
+                data-src="img/projekte1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projekte ende -->
+
+  <!-- Bewertung start -->
+  <section class="bewertung">
+
+    <h2 class="heading-bewertung">
+      Bewertung
+    </h2>
+
+    <div class="container-fluid">
+
+      <!-- Slider Boostrap -->
+      <div class="container-fluid">
+
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1" style="background-color: rgb(144, 238, 144);"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 1"
+              style="background-color: rgb(144, 238, 144);"></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="container container-clients">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 my-2">
+                    <div class="container-content">
+                      <div class="img-client">
+                        <img src="img/unnamed1.png" class="image-clients" alt="">
+                      </div>
+
+                      <div class="icon stars">
+                        <ul class="rating">
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h3 class="client-name">Markus George</h3>
+                        <p class="para-client">Von der Kontaktaufnahme bis zum Abschluss der Gartenarbeiten würde ich
+                          sogar 6 Sterne geben!
+                          Sehr sympathische und schnelle Reaktion, zuverlässige und saubere Arbeit zu einem Superpreis -
+                          100%ige Weiterempfehlung!</p>
+                        <a href="https://maps.app.goo.gl/2NCLuFdquJ6Hec846" class="bewertung-link">Zu Google
+                          Bewertung</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 my-2">
+                    <div class="container-content">
+                      <div class="img-client">
+                        <img src="img/unnamed2.png" class="image-clients" alt="">
+                      </div>
+
+                      <div class="icon stars">
+                        <ul class="rating">
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h3 class="client-name">Late NightSpecial</h3>
+                        <p class="para-client">Sehr zufrieden! Hat sich direkt Zeit genommen, sehr gezielt gewusst was
+                          Sache ist und mit Freude auf die Arbeit fokussiert! Unsere Hecke werde ich nur noch von Herrn
+                          Kluck schneiden lassen! Sehr sauber und konkret! Immer wieder gerne! 👍 …</p>
+                        <a href="https://maps.app.goo.gl/QaygnEFcrFgWsdWS6" class="bewertung-link">Zu Google
+                          Bewertung</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+
+              <div class="container container-clients">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 my-2">
+                    <div class="container-content">
+                      <div class="img-client">
+                        <img src="img/unnamed3.png" class="image-clients" alt="">
+                      </div>
+
+                      <div class="icon stars">
+                        <ul class="rating">
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h3 class="client-name">Sophie Wegner</h3>
+                        <p class="para-client">Ich kann absolut nichts Negatives schreiben, denn die 5 Sterne sind
+                          absolut gerechtfertigt! Die Arbeit wurde super ordentlich durchgeführt, die Kommunikation war
+                          top und ich bin mit dem Ergebnis einfach nur zufrieden! Kann ich wirklich nur weiter
+                          empfehlen!</p>
+                        <a href="https://maps.app.goo.gl/Q74cPDFvE2mKa6tAA" class="bewertung-link">Zu Google
+                          Bewertung</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 my-2">
+                    <div class="container-content">
+                      <div class="img-client">
+                        <img src="img/unnamed4.png" class="image-clients" alt="">
+                      </div>
+
+                      <div class="icon stars">
+                        <ul class="rating">
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                          <li class="stars"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h3 class="client-name">Ronja Rosenau</h3>
+                        <p class="para-client">Die Beratung war super, die Arbeit wurde professionell und sorgfältig
+                          ausgeführt, und die Kommunikation war stets freundlich. Ich bin sehr zufrieden und kann es nur
+                          weiterempfehlen!</p>
+                        <a href="https://maps.app.goo.gl/oMeTxX4uAtSAkANRA" class="bewertung-link">Zu Google
+                          Bewertung</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Bewertung ende -->
+
+  <!-- Kontact -->
+  <section class="kontakt-form" id="kontakt">
+    <h3 class="heading-kontakt">Kontaktieren Sie uns</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="popup-form">
+
+            <input type="hidden" name="access_key" value="7e8404aa-5191-462e-ac9c-ff65668a30c2">
+
+            <form class="form-origin">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="mb-3">
+
+                    <input type="text" class="form-control" placeholder="Vollständiger Name*" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" name="name" required>
+
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="mb-3">
+
+                    <input type="Email*" class="form-control" placeholder="Email Adresse*" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" name="email" required>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <textarea class="form-control" placeholder="Nachricht*" id="exampleFormControlTextarea1"
+                      name="message" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3 text-center">
+                    <button class="btn-kontakt" type="submit">Nachricht senden</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div style="color: rgb(85, 85, 85);" class="content-kontakt">
+
+            <!-- Kontakbereich mit QR-Code -->
+            <div class="col mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                <path
+                  d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5">
+                </path>
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+              </svg>
+
+              <i style="color: rgb(85, 85, 85)" class="bi bi-person-bounding-box">Arwed Kluck</i>
+              <br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z">
+                </path>
+              </svg>
+
+              <i style="color: rgb(85, 85, 85)" class="bi bi-envelope"> gartenbau-arwed.kluck@web.de</i>
+              <br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                </path>
+              </svg>
+              <i style="color: rgb(85, 85, 85)" class="bi bi-instagram"> GartenundLandschaftsBau.Kluck</i> <br>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-phone"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z">
+                </path>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+              </svg>
+              <i style="color: rgb(85, 85, 85)" class="bi bi-phone">0178-2899864</i>
+              <br><br>
+              <img src="img/instaqr.png" id="qrbild" style="border-radius:8px;">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Kontact ende -->
+
+  <!-- Impressum start -->
+  <section id="impressum" class="impressum-section">
+    <div class="content-impressum">
+      <h2 class="heading-impressum">Impressum</h2>
+      <p class="para-impressum">
+        Angaben gemäß § 5 TMG:<br>
+        Arwed Kluck<br>
+        Bremerstraße 22<br>
+        24118 Kiel<br><br>
+        Telefon: 0178-2899864<br>
+        E-Mail: gartenbau-arwed.kluck@web.de<br><br>
+      <p class="para-impressum">Haftungsausschluss:
+        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
+        Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+        TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind
+        wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+        überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+        Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+        Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
+        möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+      </p>
+      </p>
+    </div>
+  </section>
+  <!-- Impressum ende -->
+
+  <!-- Footer start -->
+  <footer>
+    <p class="para-footer"> &#169; Copyrights By Arwed Kluck 2025</p>
+  </footer>
+</body>
+<!-- script link -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
